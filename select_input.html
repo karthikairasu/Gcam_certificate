@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js" type="text/javascript"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+<select class="selectpicker" data-width="fit">
+    <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+  <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+</select>
+
+<select id="countrySelect" name="ipicked__bahasa" class="selectpicker" data-show-content="true" onChange="go__bahasa()">
+  <option value="http://www.yahoo.com"  data-content='<span class="flag-icon flag-icon-gb"></span> ENG'>ENG</option>
+  <option value="http://www.google.com"  data-content='<span class="flag-icon flag-icon-id"></span> IND'>IND</option>
+</select>
+<input onClick="go__bahasa()" type="button" name="gobahasa" value="Go!" style="display: none">
+
+<script type="text/javascript">
+$(function() {
+    $('.selectpicker').selectpicker();
+    $('pick__lang').selectpicker();
+});
+
+function go__bahasa() {
+    location = document.pilih__bahasa.ipicked__bahasa.
+    options[document.pilih__bahasa.ipicked__bahasa.selectedIndex].value
+}
+
+</script>
+</body>
+</html>
